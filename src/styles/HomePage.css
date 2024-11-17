@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(245, 247, 246);
+  color: #333;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rgb(245, 247, 246);
+  padding: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start; 
+  align-items: flex-start;
+  min-height: 100vh; 
+  padding: 30px;
+  box-shadow: none;
+  margin-top: -5px;
+}
+
+.profile-pic {
+  width: 350px; 
+  height: 350px;
+  border-radius: 40px; 
+  overflow: hidden; 
+  border: 5px solid #4caf50; 
+  margin-right: 50px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; 
+  margin-left: -15px;
+  margin-top: -10px;
+}
+
+.profile-pic img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column; 
+}
+
+.profile-container {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 80px;
+  border-radius: 30px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  border: 1px solid rgba(227, 227, 227, 0.337);
+}
+
+.profile-selector-container {
+  position: absolute; 
+  top: 100%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1000; 
+  background-color: white;
+  padding: 10px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+}
+
+.profile-selector {
+  display: flex;
+  flex-direction: column; 
+}
+
+.profile-option {
+  cursor: pointer; 
+  margin: 5px 0; 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+
+
+.welcome {
+  margin: 10px 0;
+  font-family: 'Verdana';
+  font-weight: bold;
+  font-size: 250%;
+  color: #477a51;
+}
+
+.username {
+  margin: 10px 0;
+  font-family: 'Verdana';
+  font-weight: bold;
+  font-size: 2rem;
+  color: #53905a;
+}
+
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.quiz-button {
+  display: inline-block;
+  padding: 20px 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.quiz-button:hover {
+  background-color: #388e3c;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.horizontal-buttons {
+  display: flex;
+  flex-direction: row; 
+  gap: 15px;
+}
+
+.horizontal-buttons button {
+  display: inline-block;
+  padding: 20px 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.horizontal-buttons button:hover {
+  background-color: #388e3c;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.leaderboard {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column; 
+  margin-left: 20px; 
+  padding: 20px; 
+  background-color: #ffffff; 
+  border-radius: 30px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  min-height: calc(90vh - 160px); /* Ensure the leaderboard takes the full height of the viewport minus padding */
+  margin-top: 100px;
+  overflow-y: auto;
+  border: 1px solid rgba( 227, 227, 227, 0.337);
+}
+
+.leaderboard h2 {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: rgb(76, 138, 76);
+  position: relative; 
+  display: inline-block; 
+}
+
+.leaderboard h2::after {
+  content: "";
+  position: absolute;
+  width: 100%; 
+  height: 2px; 
+  background-color: rgb(76, 138, 76); 
+  bottom: -20px; 
+  left: 0;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0px;
+  font-size: 1.2rem;
+  flex-grow: 1; 
+}
+
+.leaderboard li {
+  margin: 10px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  background-color: rgb(106, 177, 120);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+  text-align: left;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.nav-bar {
+  width: calc(100% - 40px);
+  max-width: 10;
+  background-color: rgba(245, 247, 246, 0);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center; 
+  padding: 0px 0px; 
+  z-index: 1000; 
+  box-shadow: none;
+}
+
+.navtext {
+  flex-grow: 1;
+  font-family: 'Verdana';
+  font-size: 350%;
+  gap: 50px;
+  font-weight: bold;
+  color: rgb(95, 139, 90);
+  text-align: left;
+  margin-left: 45px;
+  margin-top: 40px;
+}
+
+.daily-tips-container {
+  position: absolute;
+  top: 690px; 
+  left: 40px; 
+  padding: 44px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 340px;
+  font-family: 'Verdana', sans-serif;
+  border: 1px solid rgba(227, 227, 227, 0.337);
+  min-width: 340px;
+  height: calc(90vh - 744px);
+  margin-top: -20px;
+}
+
+.daily-tips-container h3 {
+  font-size: 1.4rem;
+  color: #4caf50;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.daily-tips-container p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.fun-fact-container {
+  position: absolute;
+  top: 690px;
+  left: 505px; 
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  font-family: 'Verdana', sans-serif;
+  border: 1px solid rgba(227, 227, 227, 0.337);
+  min-width: 385px;
+  height: calc(90vh - 695px);
+  margin-top: -20px;
+}
+
+.fun-fact-container h3 {
+  font-size: 1.4rem;
+  color: #4caf50;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.fun-fact-container p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}

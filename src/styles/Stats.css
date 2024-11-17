@@ -1,0 +1,227 @@
+.stats-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    height: 100vh;
+    gap: 20px;
+  }
+  
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+    background-color: rgb(86, 155, 119);
+    border-radius: 40px;
+    min-height: calc(100vh - 100px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .profile-pic {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 320px;
+    height: 320px;
+    border-color:rgb(86, 155, 119);
+    border-radius: 40px;
+  }
+
+  .profile-pic img {
+    width: 100%;
+    height: 100%; 
+  }
+  
+  .profile-details {
+    text-align: left;
+    align-items: left;
+  }
+
+  .profile-details h2 {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 2.4em;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(247, 255, 251);
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+  
+.today-carbon {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: rgb(36, 36, 36);
+  background-color: rgb(225, 239, 226);
+  border-radius: 30px;
+  width: 280px;
+
+}
+
+.tree-collected {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: rgb(36, 36, 36);
+  background-color: rgb(225, 239, 226);
+  border-radius: 30px;
+  width: 280px;
+}
+
+.tree-collected h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 0.9em;
+  color: rgb(93, 125, 109);
+  font-weight: bold;
+}
+
+.tree-collected h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 2.4em;
+  color: rgb(31, 60, 45);
+  font-weight: bold;
+}
+
+.carbon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.today-carbon h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 0.9em;
+  color: rgb(93, 125, 109);
+  font-weight: bold;
+}
+
+.today-carbon h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 2.4em;
+  color: rgb(31, 60, 45);
+  font-weight: bold;
+}
+
+.smoke-image {
+  margin-left: 10px;
+  width: 60px;
+  height: auto;
+}
+
+.tree-image {
+  margin-left: 10px;
+  margin-right: -10px;
+  width: 90px;
+  height: auto;
+}
+
+  .past-data-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .past-data-section h3 {
+    margin: 0 0 20px;
+    font-size: 2.4em;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(31, 60, 45);
+  }
+  
+  .graph-container {
+    height: 500px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 20px; 
+  }
+  
+  .bar-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100px;
+  }
+  
+  .bar-container {
+    display: grid;
+    grid-template-columns: 60px auto;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .bar-label {
+    text-align: right;
+    font-size: 1em;
+    padding-right: 15px;
+  }
+  
+  .bar {
+    height: 54px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .bar .carbon-value {
+    position: absolute;
+    right: -75px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9em;
+    color: black;
+  }
+  
+  .tips-section {
+    width: 100%;
+    border: 1px solid #ddd; 
+    border-radius: 30px;
+    padding: 15px;
+    background-color: white;
+    text-align: center; 
+    margin-top: 20px; 
+  }
+  
+  .tips-section p {
+    padding: 15px;
+    font-size: 20px;
+  }
+  
+  .stats-back-button {
+    position: fixed;
+    top: 20px;   
+    right: 30px;  
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(86, 155, 119);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 120px;
+    margin-top: 20px;
+  }
+  
+  .stats-back-button:hover {
+    background-color: rgb(86, 155, 119);
+  }
+  

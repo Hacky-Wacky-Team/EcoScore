@@ -1,0 +1,202 @@
+body {
+    background-color: rgb(31, 60, 45);
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+.answer {
+    text-align: center; 
+    font-size: 100px; 
+    font-weight: bold;
+    font-family: Verdana; 
+    margin-top: auto; 
+    margin-bottom: auto; 
+}
+
+.answer p{
+    font-weight: normal;
+    font-family: Verdana; 
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.quiz-container {
+    font-family: Verdana, sans-serif;
+    background-color: rgb(221, 231, 225);
+    width: 95%;
+    margin: 70px auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.quiz-container h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(31, 60, 45);
+    margin-left: 20px;
+    margin-bottom: -20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.progress-indicator {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgb(31, 60, 45);
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+.quiz-form {
+    flex: 1;
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-align: left;
+}
+
+.tree-pic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 70px;
+    right:30px;
+}
+
+.tree-pic {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.tree-text {
+    font-size: 1rem;
+    color: rgb(31, 60, 45);
+    font-style: italic;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.quiz-question {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: Verdana;
+}
+
+.question-description {
+    font-size: 20px;
+    color: #555;
+    margin-top: 40px;
+}
+
+.scale-text {
+    font-size: 0.85rem;
+    color: rgb(31, 60, 45);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.slider {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.slider-value {
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(59, 99, 79);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100px;
+}
+
+.nav-button {
+    padding: 12px 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(86, 155, 119);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.go-home-button {
+    padding: 12px 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(86, 155, 119);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 150px;
+    margin-top: -20px;
+}
+
+.answer h1 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Verdana;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #388e3c;
+}
+
+.home-button {
+    position: fixed;
+    bottom: 100px;   
+    left: 100px;  
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(86, 155, 119);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 120px;
+    margin-top: 20px;
+  }
+  
+  .home-button:hover {
+    background-color: rgb(86, 155, 119);
+  }
