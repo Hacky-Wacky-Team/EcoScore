@@ -4,6 +4,8 @@
 > [!IMPORTANT]
 > Track and calculate your carbon footprint, earn trees when you complete your daily carbon footprint log and compete with people globally!
 
+Project Submission: https://dorahacks.io/buidl/19993
+
 ## What does this do?
 Everyday, over 1,300 tonnes of CO2 are produced per second. With this in mind, we created EcoScore, an online digital platform that allows users to track and record their carbon footprint in a fun and interactive way! Everyday, users are prompted to complete a short carbon footprint quiz where EcoScore’s algorithm computes their daily carbon footprint. As users complete their daily quizzes, they also earn “trees” which slowly grow as they complete each question. These “trees” provide users with the incentive to complete their daily quizzes, and they can view the amount of trees they’ve collected in their stats page. EcoScore also allows users to compete with other people around the world through its daily leaderboard that is updated each day. This further incentivizes users to lower their carbon footprint as they attempt to climb the leaderboard.
 
